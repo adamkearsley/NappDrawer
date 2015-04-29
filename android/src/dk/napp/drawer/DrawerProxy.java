@@ -135,7 +135,7 @@ public class DrawerProxy extends TiWindowProxy implements TiActivityWindow
 	}
 
 	@Override
-	public void windowCreated(TiBaseActivity activity, Bundle savedInstanceState) {
+	public void windowCreated(TiBaseActivity activity) {
 		slideMenuActivity = new WeakReference<Activity>(activity);
 		activity.setWindowProxy(this);
 		setActivity(activity);
